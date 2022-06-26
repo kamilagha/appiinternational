@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>How to Create a Responsive Website Using HTML CSS & JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<link rel="shortcut icon" href="favicon (2).png" type="image/x-icon">
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="logo">Find Homes</li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>        
+    </div>
+    
+    <div class="banner" id="home">
+        <div class="banner-text"> 
+            <img src="api.png" width="350" height="250">
+            <h2>Appi International</h2>
+            <p>Choose your next home with us.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+    
+    <div class="about" id="about">
+        <div class="section-header">
+            <h2>About US</h2>
+        </div>
+        <div class="about-content">
+            <div class="single-about">
+                <img src="1.jpg" alt="">
+                <div class="about-text">
+                    <h2>Best Housing Agency</h2>
+                    <p>Appi International has established itself as one of the leading real estate networks in Pakistan, connecting thousands of property buyers/ sellers across the globe. We provide astute real estate services. Our pragmatic approach and understanding of market will go a long way in making your investment decisions easier.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="service" id="service">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p> ✓ We believe in by the book methodology when it comes to business transactions. Fair, smooth and efficient.
+
+                ✓ We cover all aspects of real estate. Commercial and residential properties, houses, apartments, flats, shops, agricultural and industrial land.
+
+                ✓ We only work with authentic housing societies such as DHA and LDA City Lahore.
+
+                ✓ We keep you updated with the current market analysis, investment trends and updates on latest developments/projects.
+                
+                ✓ We help you locate appropriate clients in order to conclude your transactions.</p>
+        </div>
+        <div class="service-content">
+            <div class="single-service">
+                <img src="3.jpg" alt="">
+                <h2>Comfortable Apartment</h2>
+                <p>Share your budget and property requirements and we will ensure you seemlesss transactions at best possible prices according to your wishes. We provide professional consultancy at Red Real Estate.</p>
+            </div>
+            <div class="single-service">
+                <img src="4.jpg" alt="">
+                <h2>Affordable Price</h2>
+                <p>Selling properties through Red Real Estate will ensure that your porpose is served properly. We do are utmost best in locating suitable buyers without time lapse. Get in touch with us today.</p>
+            </div>
+            <div class="single-service">
+                <img src="5.jpg" alt="">
+                <h2>Luxury Designs</h2>
+                <p>Contact our professionally trained consultants at Red Real Estate for consultation at your convenience. Share your requirements with our team and we will assist you as well as we possibly could.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="section-header">
+            <h2>Contact us</h2>
+            <p>Feel Free to Contact us ! Anywhere ! Anytime.</p>
+        </div>
+        <div class="single-contact">
+            <p>CALL US!</p>
+            <p>KAMIL AGHA [CEO]</p>
+            <p>+923074058322</p>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright By Kamil Agha</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 50) {
+                $(".header").addClass("active");
+            } else {                
+               $(".header").removeClass("active");
+            }
+        });
+    </script>
+</body>
+</html>
